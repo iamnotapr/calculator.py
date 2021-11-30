@@ -1,8 +1,4 @@
-	//select
-    document.querySelector(".select").onchange = function () {
-        location.assign(this.value);
-    }
-    //onlyNumber
+  //onlyNumber
     $(document).ready(function() {
         $("input.card-number").keydown(function(event) {
             if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 ||
