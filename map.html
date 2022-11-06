@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>DELTA</title>
+    <style>
+        .div-head{position: absolute;top:0px;width: 100%;background: rgb(121, 121, 121);height: 50px;left: 0;}
+        .map-place{padding: 40px 0;text-align: center;}.div-container{position: absolute;top:50px;left: 0;margin: 0;max-width: 1000px;}
+        .logo{position: absolute;top:10px;left: 50px;color: white;font-size: 20px;}.coordinate{position: absolute;top:10px;left:400px;color: white;font-size: 20px;text-decoration: underline tomato;}
+        .dip-map{display: none;}
+        @media screen and (max-width:635px) {
+            .div-head{position: absolute;top:0;left: 0;width: 305px;height: 60px;background: rgb(121, 121, 121);z-index: 99;}
+            .map-div{position: absolute;top:-53px;}.logo{font-size: 60px;position: absolute;top:-17px}.coordinate{display: none;}
+            .pc-map{display: none;}
+            .dip-map{display: block;}
+        }
+    </style>
+</head>
+<body>
+    <div class="header-div">
+        <div class="div-head">
+            <div class="logo">DELTA</div>
+            <div class="coordinate">55.431764, 78.278067</div>
+        </div>
+    </div>
+    <nav>
+        <div class="map-div">
+            <section class="map-place">
+                <div class="div-container">
+                    <!--map-->
+                    <!--width="1487" height="693"-->
+                    <!--width="770" height="1493"-->
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1VwfoA5WMqNjtssT5qlH6H0qrRYrujPI&ehbc=2E312F" width="1487" height="693" class="pc-map"></iframe>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1VwfoA5WMqNjtssT5qlH6H0qrRYrujPI&ehbc=2E312F" width="305" height="635" class="dip-map"></iframe>
+                </div>
+            </section>
+        </div>
+    </nav>
+</body>
+</html>
